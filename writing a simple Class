@@ -1,0 +1,36 @@
+ class Student{
+    int id;
+    int salary;
+    String name;
+    String program;
+    public void printDetails(){
+        System.out.println("My name is  "+name);
+        System.out.println("My ID is   "+id);
+        System.out.println("Degree Program   "+program);
+    }
+    public int getSalary(){
+        return salary;
+    }
+}
+public class WritingCustomClass {
+    public static void main(String[] args) {
+        // Attributes of shoaib
+        Student shoaib = new Student();
+        shoaib.id=15;
+        shoaib.salary=1500;
+        shoaib.name = "SHOAIB";
+        shoaib.program = "Bachlor in  computer science";
+        shoaib.printDetails();
+        int salary1 = shoaib.getSalary();
+        System.out.println("My salary is "+salary1);
+        // Attributes of john
+        Student john = new Student();
+        john.id=105;
+        john.salary=1200;
+        john.name = "john";
+        john.program = "Bachlor in  science";
+        int salary = john.getSalary();
+        john.printDetails();
+        System.out.println("My salary is "+salary);
+    }
+}
