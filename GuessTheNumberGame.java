@@ -6,7 +6,7 @@ public  int number ;
 public int userInput;
 public int noOfGuesses;
      // method to setNoOfGuesses
-public int setNoOfGuesses(int noOfGuesses){    return this.noOfGuesses = noOfGuesses ;}
+public void setNoOfGuesses(int noOfGuesses){     this.noOfGuesses = noOfGuesses ;}
     // method to getNoOfGuesses
 public int getNoOfGuesses(){    return noOfGuesses ; }
     // Constructor of class game to generate a random  number while the object is created
